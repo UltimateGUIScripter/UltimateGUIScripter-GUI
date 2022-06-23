@@ -77,7 +77,7 @@ end)
 end
 if game.PlaceId == 4616652839 then
     HomeSection:NewLabel("Game Is: Shindo Life Credits To Premier X, https://discord.gg/premierx")
-    local SL2 = Windows:NewTab("Raise A Floppa 2")
+    local SL2 = Windows:NewTab("Shindo Life")
     local SL2Section = SL2:NewSection("Script")
     SL2Section:NewButton("SL2Script", "Opens up SL2 Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
@@ -91,15 +91,6 @@ if game.PlaceId == 5130598377 then
     local AUTSection = AUT:NewSection("Script")
     AUTSection:newbutton("AUTScript", "Opens up AUT Script", function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua"))()
-end)
-end
-
-if game.PlaceId == 9488143445 then
-    HomeSection:NewLabel("Game Is: Raise A Bloppa")
-    local RAB = Windows:NewTab("Raise A Bloppa")
-    local RABSection = RAB:NewSection("Script")
-    RABSection:newbutton("Raise A Bloppa Script", "Opens up RAB script", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/Y9ezZJVt",true))()
 end)
 end
 
