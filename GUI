@@ -1,3 +1,23 @@
+--[[yes no looking in skript haha
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+no --]]
+
 wait(1)
 local NotificationBindable = Instance.new("BindableFunction")
 local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
@@ -119,6 +139,6 @@ end)
 Section:NewButton("Help", "Dm UltimateGUIScripter#3989 for help", function() 
     print("y")
 end)
-Section:NewButton("Copy Discord", Copies Discord ID to my server"), function()
+Section:NewButton("Copy Discord", "Copies Discord ID to my server"), function()
     setclipboard("https://discord.gg/VxUFFjX8nB")  
 end)
