@@ -57,10 +57,7 @@ ScriptsSection:NewButton("Infinite Yield", "Opens Infinite Yield", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() 
     print("Clicked")
 end)
-ScriptsSection:NewButton("Simple Spy (WIP)", "Opens up Simple Spy (Remote Script)", function() 
-loadstring(game:HttpGet(("https://pastebin.com/raw/UiDX0Cb9"),true))()
-    print("Clicked")
-end)
+
 if game.PlaceId == 9772878203 then
     HomeSection:NewLabel("Game Is: Raise A Floppa 2")
 local RAF2 = Window:NewTab("Raise A Floppa 2")
