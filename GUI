@@ -42,13 +42,11 @@ wait (5)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("UltimateGUIScripter's GUI", "BloodTheme")
 local ScriptVersion = "0.0.8"
-local Supported_Games = "FF, AUT, RAF2, SL2, PL"
 
 local HomeTab = Window:NewTab("Home")
 local HomeSection = HomeTab:NewSection("Home")
 HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. "!")
 HomeSection:NewLabel("UltimateGUIScripter's GUI with version " .. ScriptVersion .. " .")
-HomeSection:NewLabel("Supported games: " .. Supported_Games .. ".")
 
 -- Scripts
 local Scripts = Window:NewTab("Scripts")
