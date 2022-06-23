@@ -59,7 +59,6 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield
 end)
 ScriptsSection:NewButton("Simple Spy (WIP)", "Opens up Simple Spy (Remote Script)", function() 
 loadstring(game:HttpGet(("https://pastebin.com/raw/UiDX0Cb9"),true))()
-"),true))()
     print("Clicked")
 end)
 if game.PlaceId == 9772878203 then
