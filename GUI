@@ -95,6 +95,16 @@ if game.PlaceId == 5130598377 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua"))()
 end)
 end
+
+if game.PlaceId == 9488143445 then
+    HomeSection:NewLabel("Game Is: Raise A Bloppa")
+    local RAB = Windows:NewTab("Raise A Bloppa")
+    local RABSection = Windows:NewTab("Script")
+    RABSection:newbutton("Raise A Bloppa Script", "Opens up RAB script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Y9ezZJVt",true))()
+end)
+end
+
 if game.PlaceId == 155615604 then
 
     HomeSection:NewLabel("Game Is: Prison Life")
