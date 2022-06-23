@@ -1,0 +1,144 @@
+--[[yes no looking in skript haha
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+no --]]
+
+wait(1)
+local NotificationBindable = Instance.new("BindableFunction")
+local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = Title;
+		Text = Text;
+		Icon = "";
+		Duration = Duration;
+		Button1 = Button1Text;
+		Button2 = nil;
+		Callback = NotificationBindable;
+	})
+end
+
+Msgreq("UltimateGUIScripter Gui Script","Subscribe To UltimateGUIScripter",15,nil)
+local SongID = "http://www.roblox.com/asset/?id=198665867"
+Bypass = "death"
+if not Bypass then Bypass = "limbs" end
+HumanDied = false
+
+wait (5)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("UltimateGUIScripter's GUI", "BloodTheme")
+local ScriptVersion = "0.0.8"
+local Supported_Games = "FF, AUT, RAF2, SL2, PL"
+
+local HomeTab = Window:NewTab("Home")
+local HomeSection = HomeTab:NewSection("Home")
+HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. "!")
+HomeSection:NewLabel("UltimateGUIScripter's GUI with version " .. ScriptVersion .. " .")
+HomeSection:NewLabel("Supported games: " .. Supported_Games .. ".")
+
+-- Scripts
+local Scripts = Window:NewTab("Scripts")
+local ScriptsSection = Scripts:NewSection("Scripts")
+ScriptsSection:NewButton("Infinite Yield", "Opens Infinite Yield", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() 
+    print("Clicked")
+end)
+ScriptsSection:NewButton("Simple Spy (WIP)", "Opens up Simple Spy (Remote Script)", function() 
+loadstring(game:HttpGet(("https://pastebin.com/UiDX0Cb9"),true))()
+    print("Clicked")
+end)
+if game.PlaceId == 9772878203 then
+    HomeSection:NewLabel("Game Is: Raise A Floppa 2")
+local RAF2 = Window:NewTab("Raise A Floppa 2")
+local RAF2Section = RAF2:NewSection("Script")
+RAF2Section:NewButton("RAF2SCRIPT", "Opens up Raise A Floppa 2 script", function() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/raf2'))()
+    print("Credits To Noobxploit")
+end)
+end
+
+if game.PlaceId == 6447798030 then
+    HomeSection:NewLabel("Game Is: Funky Friday")
+local FF = Window:NewTab("Funky Friday")
+local FFSection = FF:NewSection("Script")
+FFSection:NewButton("Funky Friday Script", "opens up FF script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+    print("Credits To Wally")
+end)
+end
+if game.PlaceId == 4616652839 then
+    HomeSection:NewLabel("Game Is: Shindo Life Credits To Premier X, https://discord.gg/premierx")
+    local SL2 = Windows:NewTab("Raise A Floppa 2")
+    local SL2Section = SL2:NewSection("Script")
+    SL2Section:NewButton("SL2Script", "Opens up SL2 Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
+    print("Credits To Premier X")
+end)
+end
+
+if game.PlaceId == 5130598377 then
+    HomeSection:NewLabel("Game Is: A Universal Time")
+    local AUT = Windows:NewTab("AUT")
+    local AUTSection = AUT:NewSection("Script")
+    AUTSection:newbutton("AUTScript", "Opens up AUT Script", function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua"))()
+end)
+end
+if game.PlaceId == 155615604 then
+
+    HomeSection:NewLabel("Game Is: Prison Life")
+    local PrisonLife = Window:NewTab("PrisonLife")
+    local PrisonLifeSection = PrisonLife:NewSection("PrisonLife")
+ 
+    PrisonLifeSection:NewDropdown("Give Gun", "Gives the localplayer a gun", {"M9", "Remington 870", "AK-47"}, function(v)
+        local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[v].ITEMPICKUP
+        local Event = game:GetService("Workspace").Remote.ItemHandler
+        Event:InvokeServer(A_1)
+    end)
+ 
+    PrisonLifeSection:NewDropdown("Gun Mod", "Makes the gun op", {"M9", "Remington 870", "AK-47", "Taser"}, function(v)
+        local module = nil
+        if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v) then
+            module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
+        elseif game:GetService("Players").LocalPlayer.Character:FindFirstChild(v) then
+            module = require(game:GetService("Players").LocalPlayer.Character[v].GunStates)
+        end
+        if module ~= nil then
+            module["MaxAmmo"] = math.huge
+            module["CurrentAmmo"] = math.huge
+            module["StoredAmmo"] = math.huge
+            module["FireRate"] = 0.000001
+            module["Spread"] = 0
+            module["Range"] = math.huge
+            module["Bullets"] = 4
+            module["ReloadTime"] = 0.000001
+            module["AutoFire"] = true
+        end
+    end)
+end
+
+local Section = Window:NewTab("Misc")
+local Section = Section:NewSection("Misc")
+Section:NewKeybind("Open/Close Gui", "Opens/Closes the gui", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
+Section:NewButton("Credits", "Credits To UltimateGUIScripter i did it alone", function()
+    print("y")
+end)
+Section:NewButton("Help", "Dm UltimateGUIScripter#3989 for help", function() 
+    print("y")
+end)
