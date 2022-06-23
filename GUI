@@ -58,38 +58,30 @@ end)
 
 if game.PlaceId == 9772878203 then
     HomeSection:NewLabel("Game Is: Raise A Floppa 2")
-local RAF2 = Window:NewTab("Raise A Floppa 2")
-local RAF2Section = RAF2:NewSection("Script")
-RAF2Section:NewButton("RAF2SCRIPT", "Opens up Raise A Floppa 2 script", function() 
+ScriptsSection:NewButton("RAF2SCRIPT", "Opens up Raise A Floppa 2 script", function() 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/raf2'))()
     print("Credits To Noobxploit")
 end)
 end
 
-if game.PlaceId 662417684 == then
+if game.PlaceId == 662417684 then
 HomeSection:NewLabel("Game Is: Lucky Blocks Battleground")
-local LBB = Windows:NewTab("Lucky Blocks Battleground")
-local LBBSection = LBB:NewSection("script")
-LBBSection:NewButton("LBBScript", "Opens up lucky block battleground script", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/3faS9abg", true))()
+ScriptsSection:NewButton("LBBScript", "Opens up lucky block battleground script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/LBB/main/LBB",true))()
 print("clicked")
 end)
 end
 
 if game.PlaceId == 6447798030 then
     HomeSection:NewLabel("Game Is: Funky Friday")
-local FF = Window:NewTab("Funky Friday")
-local FFSection = FF:NewSection("Script")
-FFSection:NewButton("Funky Friday Script", "opens up FF script", function()
+ScriptsSection:NewButton("Funky Friday Script", "opens up FF script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
     print("Credits To Wally")
 end)
 end
 if game.PlaceId == 4616652839 then
     HomeSection:NewLabel("Game Is: Shindo Life Credits To Premier X, https://discord.gg/premierx")
-    local SL2 = Windows:NewTab("Shindo Life")
-    local SL2Section = SL2:NewSection("Script")
-    SL2Section:NewButton("SL2Script", "Opens up SL2 Script", function()
+    ScriptsSection:NewButton("SL2Script", "Opens up SL2 Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
     print("Credits To Premier X")
 end)
@@ -97,9 +89,7 @@ end
 
 if game.PlaceId == 5130598377 then
     HomeSection:NewLabel("Game Is: A Universal Time")
-    local AUT = Windows:NewTab("AUT")
-    local AUTSection = AUT:NewSection("Script")
-    AUTSection:newbutton("AUTScript", "Opens up AUT Script", function() 
+    ScriptsSection:newbutton("AUTScript", "Opens up AUT Script", function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua"))()
 end)
 end
@@ -107,16 +97,13 @@ end
 if game.PlaceId == 155615604 then
 
     HomeSection:NewLabel("Game Is: Prison Life")
-    local PrisonLife = Window:NewTab("PrisonLife")
-    local PrisonLifeSection = PrisonLife:NewSection("PrisonLife")
- 
-    PrisonLifeSection:NewDropdown("Give Gun", "Gives the localplayer a gun", {"M9", "Remington 870", "AK-47"}, function(v)
+    ScriptsSection:NewDropdown("Give Gun", "Gives the localplayer a gun", {"M9", "Remington 870", "AK-47"}, function(v)
         local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[v].ITEMPICKUP
         local Event = game:GetService("Workspace").Remote.ItemHandler
         Event:InvokeServer(A_1)
     end)
  
-    PrisonLifeSection:NewDropdown("Gun Mod", "Makes the gun op", {"M9", "Remington 870", "AK-47", "Taser"}, function(v)
+    ScriptsSection:NewDropdown("Gun Mod", "Makes the gun op", {"M9", "Remington 870", "AK-47", "Taser"}, function(v)
         local module = nil
         if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v) then
             module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
