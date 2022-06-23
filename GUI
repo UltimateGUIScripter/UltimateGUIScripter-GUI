@@ -32,7 +32,7 @@ local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
 	})
 end
 
-Msgreq("UltimateGUIScripter Gui Script","Subscribe To UltimateGUIScripter",15,nil)
+Msgreq("UltimateGUI Script","Subscribe To UltimateGUIScripter",15,nil)
 local SongID = "http://www.roblox.com/asset/?id=198665867"
 Bypass = "death"
 if not Bypass then Bypass = "limbs" end
@@ -40,7 +40,7 @@ HumanDied = false
 
 wait (5)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("UltimateGUIScripter's GUI", "BloodTheme")
+local Window = Library.CreateLib("UltimateGUI", "BloodTheme")
 local ScriptVersion = "0.0.8"
 
 local HomeTab = Window:NewTab("Home")
