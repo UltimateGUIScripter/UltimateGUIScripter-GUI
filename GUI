@@ -1,4 +1,4 @@
---[[yes no looking in skript haha
+--[[yes no looking in skript haha join discord for skript ez
 
 
 
@@ -22,18 +22,19 @@ wait(1)
 local NotificationBindable = Instance.new("BindableFunction")
 local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
 	game.StarterGui:SetCore("SendNotification", {
-		Title = Title;
-		Text = Text;
-		Icon = "";
-		Duration = Duration;
-		Button1 = Button1Text;
-		Button2 = Button2Text;
-		Callback = NotificationBindable;
+		Title = "Subscribe to UltimateGUIScripter";
+		Text = "Welcome To UltimateGUI, UltimateGUI will open in 5 seconds";
+		Icon = "http://www.roblox.com/asset/?id=10011355724";
+		Duration = 100000000000;
+		Button1 = "Ok";
+		Button2 = "Don't Care";
+		Callback = "NotificationBindable";
 	})
 end
 
+
 Msgreq("Subscribe to UltimateGUIScripter","Welcome to Ultimate Gui, UltimateGUI will open in 5 seconds",1000000,"Ok","Don't Care")
-local SongID = "http://www.roblox.com/asset/?id=198665867"
+local SongID = "http://www.roblox.com/asset/?id=8747340426"
 Bypass = "death"
 if not Bypass then Bypass = "limbs" end
 HumanDied = false
@@ -63,12 +64,13 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscrip
     print("Credits To Noobxploit")
 end)
 end
-
+if game.PlaceId == 5561268850 then
     HomeSection:NewLabel("Game Is: Randomly Generated Droids")    
     ScriptsSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
     print("Credits to Dekkosploits")
 end)
+end
 
 if game.PlaceId == 662417684 then
 HomeSection:NewLabel("Game Is: Lucky Blocks Battleground")
