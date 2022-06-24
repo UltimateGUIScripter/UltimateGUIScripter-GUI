@@ -27,26 +27,26 @@ local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
 		Icon = "";
 		Duration = Duration;
 		Button1 = Button1Text;
-		Button2 = nil;
+		Button2 = Button2Text;
 		Callback = NotificationBindable;
 	})
 end
 
-Msgreq("UltimateGUI Script","Subscribe To UltimateGUIScripter",15,nil)
+Msgreq("Subscribe to UltimateGUIScripter","Welcome to Ultimate Gui, UltimateGUI will open in 5 seconds",1000000,"Ok","Don't Care")
 local SongID = "http://www.roblox.com/asset/?id=198665867"
 Bypass = "death"
 if not Bypass then Bypass = "limbs" end
 HumanDied = false
 
-wait (5)
+wait (4.5)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("UltimateGUI", "BloodTheme")
-local ScriptVersion = "0.0.8"
+local ScriptVersion = "0.1.0"
 
 local HomeTab = Window:NewTab("Home")
 local HomeSection = HomeTab:NewSection("Home")
 HomeSection:NewLabel("Welcome, " .. game.Players.LocalPlayer.Name .. "!")
-HomeSection:NewLabel("UltimateGUIScripter's GUI with version " .. ScriptVersion .. " .")
+HomeSection:NewLabel("UltimateGUI's version is " .. ScriptVersion .. " .")
 
 -- Scripts
 local Scripts = Window:NewTab("Scripts")
@@ -57,12 +57,18 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield
 end)
 
 if game.PlaceId == 9772878203 then
-    HomeSection:NewLabel("Game Is: Raise A Floppa 2")
+    HomeSection:NewLabel("Game Is: RAF2 Credits To Noobxploit")
 ScriptsSection:NewButton("RAF2SCRIPT", "Opens up Raise A Floppa 2 script", function() 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/raf2'))()
     print("Credits To Noobxploit")
 end)
 end
+
+    HomeSection:NewLabel("Game Is: Randomly Generated Droids")    
+    ScriptsSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
+    print("Credits to Dekkosploits")
+end)
 
 if game.PlaceId == 662417684 then
 HomeSection:NewLabel("Game Is: Lucky Blocks Battleground")
@@ -73,7 +79,7 @@ end)
 end
 
 if game.PlaceId == 6447798030 then
-    HomeSection:NewLabel("Game Is: Funky Friday")
+    HomeSection:NewLabel("Game Is: Funky Friday Credits To Wally")
 ScriptsSection:NewButton("Funky Friday Script", "opens up FF script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
     print("Credits To Wally")
@@ -88,7 +94,7 @@ end)
 end
 
 if game.PlaceId == 5130598377 then
-    HomeSection:NewLabel("Game Is: A Universal Time")
+    HomeSection:NewLabel("Game Is: A Universal Time Credits To sannin9000")
     ScriptsSection:newbutton("AUTScript", "Opens up AUT Script", function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua"))()
 end)
