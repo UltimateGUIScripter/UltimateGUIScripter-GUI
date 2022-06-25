@@ -54,44 +54,38 @@ local Scripts = Window:NewTab("Scripts")
 local ScriptsSection = Scripts:NewSection("Scripts")
 ScriptsSection:NewButton("Infinite Yield", "Opens Infinite Yield", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() 
-    print("Clicked")
 end)
 
 if game.PlaceId == 9772878203 then
     HomeSection:NewLabel("Game Is: RAF2 Credits To Noobxploit")
 ScriptsSection:NewButton("RAF2SCRIPT", "Opens up Raise A Floppa 2 script", function() 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/raf2'))()
-    print("Credits To Noobxploit")
 end)
 end
 if game.PlaceId == 5561268850 then
     HomeSection:NewLabel("Game Is: Randomly Generated Droids")    
     ScriptsSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
-    print("Credits to Dekkosploits")
 end)
 end
 
 if game.PlaceId == 662417684 then
 HomeSection:NewLabel("Game Is: Lucky Blocks Battleground")
-ScriptsSection:NewButton("LBBScript", "Opens up lucky block battleground script", function()
+ScriptsSection:NewButton("LBBScript", "The Owners broke the script, so i fixed it ;-;", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/LBB/main/LBB",true))()
-print("clicked")
 end)
 end
 
 if game.PlaceId == 6447798030 then
     HomeSection:NewLabel("Game Is: Funky Friday Credits To Wally")
-ScriptsSection:NewButton("Funky Friday Script", "opens up FF script", function()
+ScriptsSection:NewButton("Funky Friday Script", "opens up FF script Credits To Wally", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
-    print("Credits To Wally")
 end)
 end
 if game.PlaceId == 4616652839 then
     HomeSection:NewLabel("Game Is: Shindo Life Credits To Premier X, https://discord.gg/premierx")
-    ScriptsSection:NewButton("SL2Script", "Opens up SL2 Script", function()
+    ScriptsSection:NewButton("SL2Script", "Opens up SL2 Script, Credits To Premier X", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
-    print("Credits To Premier X")
 end)
 end
 
@@ -133,7 +127,6 @@ if game.PlaceId == 155615604 then
 
     ScriptsSection:NewButton("Admin", "Give u prison life admin", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/admin/main/yes"))()
-    print("clicked")
     end)
 end
 
