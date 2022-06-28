@@ -62,15 +62,18 @@ ScriptsSection:NewButton("RAF2SCRIPT", "Opens up Raise A Floppa 2 script", funct
 loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/raf2'))()
 end)
 end
-if game.PlaceId == 5561268850 then
-    HomeSection:NewLabel("Game Is: Randomly Generated Droids")    
-    ScriptsSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
+local RGDTab = Window:NewTab("RGD")
+local RGDSection = RGDTab:NewSection("RGD stands for Randomly Generated Droids")
+    RGDSection:NewLabel("Question: Why did RGD got its own tab?")
+    RGDSection:NewLabel("Answer: When in game (killing droids), it wont work")
+    RGDSection:NewLabel("Script (Credits To Dekko#1485 and fire2#7697)")
+    RGDSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
 end)
-end
 
 if game.PlaceId == 662417684 then
 HomeSection:NewLabel("Game Is: Lucky Blocks Battleground")
+ScriptsSection:NewLabel("The Owners broke the script, so i fixed it ;-; LBBScript")
 ScriptsSection:NewButton("LBBScript", "The Owners broke the script, so i fixed it ;-;", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/LBB/main/LBB",true))()
 end)
