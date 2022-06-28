@@ -18,7 +18,7 @@
 
 no --]]
 
-wait(1)
+wait(0.1)
 local NotificationBindable = Instance.new("BindableFunction")
 local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
 	game.StarterGui:SetCore("SendNotification", {
@@ -39,7 +39,7 @@ Bypass = "death"
 if not Bypass then Bypass = "limbs" end
 HumanDied = false
 
-wait (4.5)
+wait (0.3)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("UltimateGUI", "BloodTheme")
 local ScriptVersion = "0.1.0"
@@ -58,6 +58,7 @@ end)
 
 if game.PlaceId == 9772878203 then
     HomeSection:NewLabel("Game Is: RAF2 Credits To Noobxploit")
+    ScriptsSection:NewLabel("Credits To Noobxploit")
 ScriptsSection:NewButton("RAF2SCRIPT", "Opens up Raise A Floppa 2 script", function() 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/raf2'))()
 end)
@@ -81,12 +82,14 @@ end
 
 if game.PlaceId == 6447798030 then
     HomeSection:NewLabel("Game Is: Funky Friday Credits To Wally")
+    ScriptsSection:NewLabel("Credits To Wally rblx")
 ScriptsSection:NewButton("Funky Friday Script", "opens up FF script Credits To Wally", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 end)
 end
 if game.PlaceId == 4616652839 then
-    HomeSection:NewLabel("Game Is: Shindo Life Credits To Premier X, https://discord.gg/premierx")
+    HomeSection:NewLabel("Game Is: Shindo Life Credits To Premier X")
+    ScriptsSection:NewLabel("Credits To Premier X https://discord.gg/premierx")
     ScriptsSection:NewButton("SL2Script", "Opens up SL2 Script, Credits To Premier X", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
 end)
@@ -94,6 +97,7 @@ end
 
 if game.PlaceId == 5130598377 then
     HomeSection:NewLabel("Game Is: A Universal Time Credits To sannin9000")
+    ScriptsSection:NewLabel("Credits to sannin9000")
     ScriptsSection:newbutton("AUTScript", "Opens up AUT Script", function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua"))()
 end)
@@ -102,6 +106,7 @@ end
 if game.PlaceId == 155615604 then
 
     HomeSection:NewLabel("Game Is: Prison Life")
+    ScriptsSection:NewLabel("I made this script")
     ScriptsSection:NewDropdown("Give Gun", "Gives the localplayer a gun", {"M9", "Remington 870", "AK-47"}, function(v)
         local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[v].ITEMPICKUP
         local Event = game:GetService("Workspace").Remote.ItemHandler
