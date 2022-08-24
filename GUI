@@ -36,7 +36,7 @@ local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
 end
 
 
-Msgreq("Subscribe to UltimateGUIScripter","Welcome to Ultimate Gui, UltimateGUI will open in 5 seconds",1000000,"Ok","Don't Care")
+Msgreq("Subscribe to UltimateGUIScripter","Welcome to Ultimate Gui, UltimateGUI is good",1000000,"Ok","Don't Care")
 local SongID = "http://www.roblox.com/asset/?id=8747340426"
 Bypass = "death"
 if not Bypass then Bypass = "limbs" end
@@ -56,101 +56,116 @@ HomeSection:NewLabel("UltimateGUI's version is " .. ScriptVersion .. " .")
 local Scripts = Window:NewTab("Scripts")
 local ScriptsSection = Scripts:NewSection("Scripts")
 ScriptsSection:NewButton("Infinite Yield", "Opens Infinite Yield", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() 
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() 
 end)
 
 if game.PlaceId == 9772878203 then
-    HomeSection:NewLabel("Game Is: RAF2 Credits To Noobxploit")
-    ScriptsSection:NewLabel("Credits To Noobxploit")
-ScriptsSection:NewButton("RAF2SCRIPT", "Opens up Raise A Floppa 2 script", function() 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/raf2'))()
-end)
+	HomeSection:NewLabel("Game Is: RAF2 Credits To Noobxploit")
+	ScriptsSection:NewLabel("Credits To Noobxploit")
+	ScriptsSection:NewButton("RAF2SCRIPT", "Opens up Raise A Floppa 2 script", function() 
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/raf2'))()
+	end)
 end
 local RGDTab = Window:NewTab("RGD")
 local RGDSection = RGDTab:NewSection("RGD stands for Randomly Generated Droids")
-    RGDSection:NewLabel("Question: Why did RGD got its own tab?")
-    RGDSection:NewLabel("Answer: When in game (killing droids), it wont work")
-    RGDSection:NewLabel("Script (Credits To Dekko#1485 and fire2#7697)")
-    RGDSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
+RGDSection:NewLabel("Question: Why did RGD got its own tab?")
+RGDSection:NewLabel("Answer: When in game (killing droids), it wont work")
+RGDSection:NewLabel("Script (Credits To Dekko#1485 and fire2#7697)")
+RGDSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
 end)
 
 if game.PlaceId == 662417684 then
-HomeSection:NewLabel("Game Is: Lucky Blocks Battleground")
-ScriptsSection:NewLabel("The Owners broke the script, so i fixed it ;-; LBBScript")
-ScriptsSection:NewButton("LBBScript", "The Owners broke the script, so i fixed it ;-;", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/LBB/main/LBB",true))()
-end)
+	HomeSection:NewLabel("Game Is: Lucky Blocks Battleground")
+	ScriptsSection:NewLabel("The Owners broke the script, so i fixed it ;-; LBBScript")
+	ScriptsSection:NewButton("LBBScript", "The Owners broke the script, so i fixed it ;-;", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/LBB/main/LBB",true))()
+	end)
 end
 
 if game.PlaceId == 6447798030 then
-    HomeSection:NewLabel("Game Is: Funky Friday Credits To Wally")
-    ScriptsSection:NewLabel("Credits To Wally rblx")
-ScriptsSection:NewButton("Funky Friday Script", "opens up FF script Credits To Wally", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
-end)
+	HomeSection:NewLabel("Game Is: Funky Friday Credits To Wally")
+	ScriptsSection:NewLabel("Credits To Wally rblx")
+	ScriptsSection:NewButton("Funky Friday Script", "opens up FF script Credits To Wally", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+	end)
 end
 if game.PlaceId == 4616652839 then
-    HomeSection:NewLabel("Game Is: Shindo Life Credits To Premier X")
-    ScriptsSection:NewLabel("Credits To Premier X https://discord.gg/premierx")
-    ScriptsSection:NewButton("SL2Script", "Opens up SL2 Script, Credits To Premier X", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
-end)
+	HomeSection:NewLabel("Game Is: Shindo Life Credits To Premier X")
+	ScriptsSection:NewLabel("Credits To Premier X https://discord.gg/premierx")
+	ScriptsSection:NewButton("SL2Script", "Opens up SL2 Script, Credits To Premier X", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
+	end)
 end
 
 if game.PlaceId == 5130598377 then
-    HomeSection:NewLabel("Game Is: A Universal Time Credits To sannin9000")
-    ScriptsSection:NewLabel("Credits to sannin9000")
-    ScriptsSection:newbutton("AUTScript", "Opens up AUT Script", function() 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua"))()
-end)
+	HomeSection:NewLabel("Game Is: A Universal Time Credits To sannin9000")
+	ScriptsSection:NewLabel("Credits to sannin9000")
+	ScriptsSection:NewButton("AUTScript", "Opens up AUT Script", function() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua"))()
+	end)
 end
 
 if game.PlaceId == 155615604 then
 
-    HomeSection:NewLabel("Game Is: Prison Life")
-    ScriptsSection:NewLabel("I made this script")
-    ScriptsSection:NewDropdown("Give Gun", "Gives the localplayer a gun", {"M9", "Remington 870", "AK-47"}, function(v)
-        local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[v].ITEMPICKUP
-        local Event = game:GetService("Workspace").Remote.ItemHandler
-        Event:InvokeServer(A_1)
-    end)
- 
-    ScriptsSection:NewDropdown("Gun Mod", "Makes the gun op", {"M9", "Remington 870", "AK-47", "Taser"}, function(v)
-        local module = nil
-        if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v) then
-            module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
-        elseif game:GetService("Players").LocalPlayer.Character:FindFirstChild(v) then
-            module = require(game:GetService("Players").LocalPlayer.Character[v].GunStates)
-        end
-        if module ~= nil then
-            module["MaxAmmo"] = math.huge
-            module["CurrentAmmo"] = math.huge
-            module["StoredAmmo"] = math.huge
-            module["FireRate"] = 0.000001
-            module["Spread"] = 0
-            module["Range"] = math.huge
-            module["Bullets"] = 4
-            module["ReloadTime"] = 0.000001
-            module["AutoFire"] = true
-        end
-    end)
+	HomeSection:NewLabel("Game Is: Prison Life")
+	ScriptsSection:NewLabel("I made this script")
+	ScriptsSection:NewDropdown("Give Gun", "Gives the localplayer a gun", {"M9", "Remington 870", "AK-47"}, function(v)
+		local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[v].ITEMPICKUP
+		local Event = game:GetService("Workspace").Remote.ItemHandler
+		Event:InvokeServer(A_1)
+	end)
 
-    ScriptsSection:NewButton("Admin", "Give u prison life admin", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/admin/main/yes"))()
-    end)
+	ScriptsSection:NewDropdown("Gun Mod", "Makes the gun op", {"M9", "Remington 870", "AK-47", "Taser"}, function(v)
+		local module = nil
+		if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v) then
+			module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
+		elseif game:GetService("Players").LocalPlayer.Character:FindFirstChild(v) then
+			module = require(game:GetService("Players").LocalPlayer.Character[v].GunStates)
+		end
+		if module ~= nil then
+			module["MaxAmmo"] = math.huge
+			module["CurrentAmmo"] = math.huge
+			module["StoredAmmo"] = math.huge
+			module["FireRate"] = 0.000001
+			module["Spread"] = 0
+			module["Range"] = math.huge
+			module["Bullets"] = 4
+			module["ReloadTime"] = 0.000001
+			module["AutoFire"] = true
+		end
+	end)
+
+	ScriptsSection:NewButton("Admin", "Give u prison life admin", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/admin/main/yes"))()
+	end)
 end
 
 if game.PlaceId == 7040744449 then
-    HomeSection:NewLabel("Game Is: A Bootleg's Day")
-    ScriptsSection:NewLabel("ABLD Scripts:")
-    ScriptsSection:NewButton("Kill Pablo", "Kills Pablo", function() 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/killpablo/main/script"))()
-ScriptsSection:NewButton("Kill Awakened Pablo", "Kills Awakened Pablo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/killawakenpablo/main/ezkill"))()
-end)
-end)
-end
+	HomeSection:NewLabel("Game Is: A Bootleg's Day")
+	ScriptsSection:NewLabel("ABLD Scripts:")
+	ScriptsSection:NewButton("Kill Pablo", "Kills Pablo", function() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/killpablo/main/script"))()
+	end)
+	ScriptsSection:NewButton("Kill Awakened Pablo", "Kills Awakened Pablo", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/killawakenpablo/main/ezkill"))()
+	end)
+	ScriptsSection:NewButton("Kill Enrico Pucci", "Kills Enrico Pucci", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/killpuchiofc/main/pucci'sdead"))()
+	end)
+	ScriptsSection:NewButton("Kill Lisa", "Kills Lisa", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/lisadeath/main/tasdnf"))()
+	end)
+	ScriptsSection:NewButton("Kill Johnny", "Kills Johnny", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/johnnysdeath/main/fart"))()
+	end)
+	ScriptsSection:NewButton("Kill Chariot Requiem", "Kills Chariot Requiem", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/scrdeath/main/ghaga"))()
+	end)
+	ScriptsSection:NewButton("Kill Vampire", "Kills Vampire", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/killuhvampireyes/main/killvampire"))()
+	end)
+	end
 
 
 local Section = Window:NewTab("Misc")
@@ -159,11 +174,11 @@ Section:NewKeybind("Open/Close Gui", "Opens/Closes the gui", Enum.KeyCode.RightC
 	Library:ToggleUI()
 end)
 Section:NewButton("Credits", "Credits To UltimateGUIScripter i did it alone", function()
-    print("y")
+	print("y")
 end)
 Section:NewButton("Help", "Copies my Discord user + Tag", function() 
-    setclipboard("UltimateGUIScripter#3989")
+	setclipboard("UltimateGUIScripter#3989")
 end)
 Section:NewButton("Copy Discord", "Copies Discord ID to my server", function()
-    setclipboard("https://discord.gg/VxUFFjX8nB")  
+	setclipboard("https://discord.gg/VxUFFjX8nB")  
 end)
