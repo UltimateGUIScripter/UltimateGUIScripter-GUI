@@ -16,6 +16,9 @@
 
 
 
+
+
+
 no --]]
 
 wait(0.1)
@@ -136,6 +139,17 @@ if game.PlaceId == 155615604 then
     ScriptsSection:NewButton("Admin", "Give u prison life admin", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/admin/main/yes"))()
     end)
+end
+
+if game.PlaceId == 7040744449 then
+    HomeSection:NewLabel("Game Is: A Bootleg's Day")
+    ScriptsSection:NewLabel("Script made with remote spy")
+    ScriptsSection:NewButton("Kill Pablo", "Kills Pablo", function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/killpablo/main/script"))()
+ScriptsSection:NewButton("Kill Awakened Pablo", "Kills Awakened Pablo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/killawakenpablo/main/ezkill"))()
+end)
+end)
 end
 
 
