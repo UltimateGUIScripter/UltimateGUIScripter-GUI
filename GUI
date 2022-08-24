@@ -143,7 +143,7 @@ end
 
 if game.PlaceId == 7040744449 then
     HomeSection:NewLabel("Game Is: A Bootleg's Day")
-    ScriptsSection:NewLabel("Script made with remote spy")
+    ScriptsSection:NewLabel("ABLD Scripts:")
     ScriptsSection:NewButton("Kill Pablo", "Kills Pablo", function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowDont/killpablo/main/script"))()
 ScriptsSection:NewButton("Kill Awakened Pablo", "Kills Awakened Pablo", function()
