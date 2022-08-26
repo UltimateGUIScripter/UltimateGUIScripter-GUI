@@ -66,14 +66,14 @@ if game.PlaceId == 9772878203 then
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/noobhosting/noobscript/main/raf2'))()
 	end)
 end
-local RGDTab = Window:NewTab("RGD")
-local RGDSection = RGDTab:NewSection("RGD stands for Randomly Generated Droids")
-RGDSection:NewLabel("Question: Why did RGD got its own tab?")
-RGDSection:NewLabel("Answer: When in game (killing droids), it wont work")
-RGDSection:NewLabel("Script (Credits To Dekko#1485 and fire2#7697)")
-RGDSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
-end)
+if game.PlaceId == 6312903733 then
+        ScriptsSection:NewLabel("Question: Why did RGD got its own tab?")
+        Scriptsection:NewLabel("Answer: When in game (killing droids), it wont work")
+        ScriptsSection:NewLabel("Script (Credits To Dekko#1485 and fire2#7697)")
+        ScriptsSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
+	        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
+        end)
+end
 
 if game.PlaceId == 662417684 then
 	HomeSection:NewLabel("Game Is: Lucky Blocks Battleground")
@@ -90,15 +90,8 @@ if game.PlaceId == 6447798030 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 	end)
 end
-if game.PlaceId == 4616652839 then
-	HomeSection:NewLabel("Game Is: Shindo Life Credits To Premier X")
-	ScriptsSection:NewLabel("Credits To Premier X https://discord.gg/premierx")
-	ScriptsSection:NewButton("SL2Script", "Opens up SL2 Script, Credits To Premier X", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
-	end)
-end
 
-if game.PlaceId == 5130598377 then
+if game.PlaceId == 6846458508 then
 	HomeSection:NewLabel("Game Is: A Universal Time Credits To sannin9000")
 	ScriptsSection:NewLabel("Credits to sannin9000")
 	ScriptsSection:NewButton("AUTScript", "Opens up AUT Script", function() 
