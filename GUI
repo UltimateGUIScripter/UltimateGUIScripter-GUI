@@ -67,6 +67,7 @@ if game.PlaceId == 9772878203 then
 	end)
 end
 if game.PlaceId == 6312903733 then
+	HomeSection:NewLabel("Game Is: Randomly Generated Droids")
 	ScriptsSection:NewLabel("Credits To Dekko#1485 and fire2#7697")
 	ScriptsSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
