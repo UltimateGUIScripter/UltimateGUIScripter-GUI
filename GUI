@@ -67,12 +67,12 @@ if game.PlaceId == 9772878203 then
 	end)
 end
 if game.PlaceId == 6312903733 then
-        ScriptsSection:NewLabel("Question: Why did RGD got its own tab?")
-        Scriptsection:NewLabel("Answer: When in game (killing droids), it wont work")
-        ScriptsSection:NewLabel("Script (Credits To Dekko#1485 and fire2#7697)")
-        ScriptsSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
-	        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
-        end)
+	ScriptsSection:NewLabel("Question: Why did RGD got its own tab?")
+	ScriptsSection:NewLabel("Answer: When in game (killing droids), it wont work")
+	ScriptsSection:NewLabel("Script (Credits To Dekko#1485 and fire2#7697)")
+	ScriptsSection:NewButton("Randomly Generated Droids", "Credits To Dekko#1485 and fire2#7697", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dekkosploits/RGD-Updated/main/RGD%20Gui'))()
+	end)
 end
 
 if game.PlaceId == 662417684 then
