@@ -179,6 +179,9 @@ if game.PlaceId == 7040744449 then
 	ScriptsSection:NewButton("No Cooldown", "ONLY WORKS FOR SOME STANDS", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/nocooldown/main/nocooldown"))()
 	end)
+	ScriptsSection:NewButton("RTZ/COUNTER", "Only works for some stands", function()
+	        loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/RTZ/main/RTZ/COUNTER/OP/YES/COUNTER/WORKS%20FOR%20SOME%20STANDS/OP/LOL"))()
+        end)
 end
 
 
