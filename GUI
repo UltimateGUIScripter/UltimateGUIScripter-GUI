@@ -26,7 +26,7 @@ local NotificationBindable = Instance.new("BindableFunction")
 local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Subscribe to UltimateGUIScripter";
-		Text = "Welcome To UltimateGUI, UltimateGUI will open in 5 seconds";
+		Text = "Welcome To UltimateGUI, UltimateGUI will open in 2 seconds";
 		Icon = "http://www.roblox.com/asset/?id=10011355724";
 		Duration = 100000000000;
 		Button1 = "Ok";
@@ -36,7 +36,7 @@ local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
 end
 
 
-Msgreq("Subscribe to UltimateGUIScripter","Welcome to Ultimate Gui, UltimateGUI is good",1000000,"Ok","Don't Care")
+Msgreq("Subscribe to UltimateGUIScripter","Welcome to Ultimate Gui, UltimateGUI is good",2,"Ok","Don't Care")
 local SongID = "http://www.roblox.com/asset/?id=8747340426"
 Bypass = "death"
 if not Bypass then Bypass = "limbs" end
