@@ -98,6 +98,14 @@ if game.PlaceId == 6846458508 then
 	end)
 end
 
+if game.PlaceId == 6839171747 then
+	HomeSection:NewLabel("Game Is: Doors")
+	ScriptsSection:NewLabel("Credits to UltimateGUIScripter")
+	ScriptsSection:NewButton("DoorsScript", "Opens up Doors Script", function() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltimateGUIScripter/DoorsGUIV2/main/Doorswhatdoyouexpect%3F"))()
+	end)
+end
+
 if game.PlaceId == 155615604 then
 
 	HomeSection:NewLabel("Game Is: Prison Life")
