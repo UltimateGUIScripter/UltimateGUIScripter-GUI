@@ -59,6 +59,10 @@ ScriptsSection:NewButton("Infinite Yield", "Opens Infinite Yield", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() 
 end)
 
+ScriptsSection:NewButton("Turtlespy", "Opens up TurtleSpy", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/BDhSQqUU", true))()
+end)
+
 if game.PlaceId == 9772878203 then
 	HomeSection:NewLabel("Game Is: RAF2 Credits To Noobxploit")
 	ScriptsSection:NewLabel("Credits To Noobxploit")
